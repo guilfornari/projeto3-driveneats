@@ -129,6 +129,9 @@ button {
     line-height: 23px;
     letter-spacing: 0.018em;    
 }
+.green {
+    background-color: #32B72F;
+}
 .selecionado {
     border: 5px solid #32B72F;
     padding: 13px 9px 8px;
