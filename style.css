@@ -103,6 +103,10 @@ section > div > div p  {
 ion-icon{
     color: #32B72F;
     font-size: 22px;
+    opacity: 0;
+}
+.confirmado{
+    opacity: 1;
 }
 footer {
     width: 414px;
@@ -127,10 +131,11 @@ button {
     font-weight: 400;
     color: #ffffff;
     line-height: 23px;
-    letter-spacing: 0.018em;    
+    letter-spacing: 0.018em; 
 }
-.green {
+.habilitado {
     background-color: #32B72F;
+    cursor: pointer;
 }
 .selecionado {
     border: 5px solid #32B72F;
