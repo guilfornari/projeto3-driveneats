@@ -1,35 +1,39 @@
 * {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #eeeeee;
 }
+
 header {
     height: 92px;
     width: 414px;
     padding-top: 8px;
     padding-left: 21px;
-    background-color:#CF2B2B;
+    background-color: #CF2B2B;
     position: fixed;
     z-index: 1;
     top: 0px;
     left: 0px;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
 
-h1{
+h1 {
     font-family: 'Righteous', cursive;
     font-size: 44px;
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 5px;
 }
+
 header p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
 }
+
 main {
     width: 414px;
     margin-top: 92px;
@@ -38,11 +42,13 @@ main {
     padding-left: 19px;
     background-color: #eeeeee;
 }
+
 h2 {
     font-family: 'Righteous', cursive;
     font-size: 26px;
     font-weight: 44px;
 }
+
 section {
     width: 100%;
     margin-top: 17px;
@@ -51,10 +57,12 @@ section {
     display: flex;
     overflow-y: hidden;
 }
+
 section::-webkit-scrollbar {
     display: none;
 }
-section > div {
+
+section>div {
     width: 172px;
     padding: 18px 14px 13px;
     Background-color: #ffffff;
@@ -63,17 +71,20 @@ section > div {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     margin-right: 16px;
     cursor: pointer
 }
+
 figure {
     width: 144px;
     margin-bottom: 4px;
 }
+
 img {
     width: 100%;
 }
+
 figcaption {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -81,7 +92,8 @@ figcaption {
     color: #333333;
     margin-top: 8px;
 }
-section > div > p {
+
+section>div>p {
     color: #A6A6A6;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -89,25 +101,30 @@ section > div > p {
     line-height: 18px;
     margin-bottom: 9px;
 }
-section > div > div {
+
+section>div>div {
     width: 100%;
     height: 22px;
     display: flex;
     justify-content: space-between;
 }
-section > div > div p  {
+
+section>div>div p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
-ion-icon{
+
+ion-icon {
     color: #32B72F;
     font-size: 22px;
     opacity: 0;
 }
-.confirmado{
+
+.confirmado {
     opacity: 1;
 }
+
 footer {
     width: 414px;
     height: 92px;
@@ -120,6 +137,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 button {
     width: 364px;
     height: 61px;
@@ -131,12 +149,14 @@ button {
     font-weight: 400;
     color: #ffffff;
     line-height: 23px;
-    letter-spacing: 0.018em; 
+    letter-spacing: 0.018em;
 }
+
 .habilitado {
     background-color: #32B72F;
     cursor: pointer;
 }
+
 .selecionado {
     border: 5px solid #32B72F;
     padding: 13px 9px 8px;
