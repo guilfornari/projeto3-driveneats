@@ -16,10 +16,7 @@ let acionarButton;
 function selecionarPrato(pratoSelecionado, optionClass) {
 
     if (checkBebida !== undefined & checkSobremesa !== undefined) {
-        acionarButton = document.querySelector("button");
-        acionarButton.classList.add("habilitado");
-        acionarButton.disabled = false;
-        acionarButton.innerHTML = "Fechar pedido";
+        enableButton();
     }
 
     checkPrato = document.querySelector(".prato .selecionado");
@@ -39,10 +36,7 @@ function selecionarPrato(pratoSelecionado, optionClass) {
 function selecionarBebida(bebidaSelecionada, optionClass) {
 
     if (checkPrato !== undefined & checkSobremesa !== undefined) {
-        acionarButton = document.querySelector("button");
-        acionarButton.classList.add("habilitado");
-        acionarButton.disabled = false;
-        acionarButton.innerHTML = "Fechar pedido";
+        enableButton();
     }
 
     checkBebida = document.querySelector(".bebida .selecionado");
@@ -62,10 +56,7 @@ function selecionarBebida(bebidaSelecionada, optionClass) {
 function selecionarSobremesa(sobremesaSelecionada, optionClass) {
 
     if (checkPrato !== undefined & checkBebida !== undefined) {
-        acionarButton = document.querySelector("button");
-        acionarButton.classList.add("habilitado");
-        acionarButton.disabled = false;
-        acionarButton.innerHTML = "Fechar pedido";
+        enableButton();
     }
 
     checkSobremesa = document.querySelector(".sobremesa .selecionado");
@@ -87,3 +78,9 @@ function url() {
     window.open(`https://wa.me/5547999984688?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0a-%20Prato:%20${pratoFinal}%0a-%20Bebida:%20${bebidaFinal}%0a-%20Sobremesa:%20${sobremesaFinal}%0aTotal:%20R$%20${custoTotal}`);
 }
 
+function enableButton() {
+    acionarButton = document.querySelector("button");
+    acionarButton.classList.add("habilitado");
+    acionarButton.disabled = false;
+    acionarButton.innerHTML = "Fechar pedido";
+}
