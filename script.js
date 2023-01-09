@@ -75,7 +75,11 @@ function selecionarSobremesa(sobremesaSelecionada, optionClass) {
 
 function url() {
     const custoTotal = (Number(Number(custoPrato).toFixed(2)) + Number(Number(custoBebida).toFixed(2)) + Number(Number(custoSobremesa).toFixed(2))).toFixed(2);
-    window.open(`https://wa.me/5547999984688?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0a-%20Prato:%20${pratoFinal}%0a-%20Bebida:%20${bebidaFinal}%0a-%20Sobremesa:%20${sobremesaFinal}%0aTotal:%20R$%20${custoTotal}`);
+    window.open(`https://wa.me/5547999984688?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0a-%20Prato:%20
+${pratoFinal}%0a-%20Bebida:%20
+${bebidaFinal}%0a-%20Sobremesa:%20
+${sobremesaFinal}%0aTotal:%20R$%20
+${custoTotal}`);
 }
 
 function enableButton() {
