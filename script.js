@@ -10,12 +10,13 @@ let sobremesaFinal;
 let custoSobremesa;
 let custoPrato;
 let custoBebida;
+let acionarButton;
 
 
 function selecionarPrato(pratoSelecionado, optionClass) {
 
     if (checkBebida !== undefined & checkSobremesa !== undefined) {
-        const acionarButton = document.querySelector("button");
+        acionarButton = document.querySelector("button");
         acionarButton.classList.add("habilitado");
         acionarButton.disabled = false;
         acionarButton.innerHTML = "Fechar pedido";
@@ -38,7 +39,7 @@ function selecionarPrato(pratoSelecionado, optionClass) {
 function selecionarBebida(bebidaSelecionada, optionClass) {
 
     if (checkPrato !== undefined & checkSobremesa !== undefined) {
-        const acionarButton = document.querySelector("button");
+        acionarButton = document.querySelector("button");
         acionarButton.classList.add("habilitado");
         acionarButton.disabled = false;
         acionarButton.innerHTML = "Fechar pedido";
@@ -61,7 +62,7 @@ function selecionarBebida(bebidaSelecionada, optionClass) {
 function selecionarSobremesa(sobremesaSelecionada, optionClass) {
 
     if (checkPrato !== undefined & checkBebida !== undefined) {
-        const acionarButton = document.querySelector("button");
+        acionarButton = document.querySelector("button");
         acionarButton.classList.add("habilitado");
         acionarButton.disabled = false;
         acionarButton.innerHTML = "Fechar pedido";
